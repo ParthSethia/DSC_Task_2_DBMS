@@ -89,6 +89,7 @@ with open('users.csv','a') as csv_file:
 
 	def disp(row): #[email,pw_hashed,name,ph_no,sex,add,path]
 		clear()    # storing data in file in the above order
+		print("BAREBONES DBMS DISPLAY PAGE")
 		print("Name: "+row[2])
 		print("Phone Number: "+row[3])
 		print("Email Address: "+row[0])
@@ -97,6 +98,7 @@ with open('users.csv','a') as csv_file:
 
 	def sear(NS):
 		clear()
+		print("BAREBONES DBMS SEARCH PAGE")
 		with open('users.csv','r') as fr:
 			csv_reader = csv.reader(fr)
 			for row in csv_reader:
